@@ -1,10 +1,14 @@
 <script >
+import {RouterView}   from  "vue-router"
 import ChatPage from './components/ChatPage.vue'
+import UserLogIn from './components/UserLogIn.vue';
+
+
 
 
 export default {
    
-    components: { ChatPage }
+    components: { ChatPage, UserLogIn }
 }
       
     
@@ -14,7 +18,10 @@ export default {
 
 <template>
   <div class="container">
-         <ChatPage/>
+    <!-- <router-view></router-view> -->
+         <!-- <ChatPage/> -->
+         <!-- <UserLogIn/> -->
+         <RouterView/>
   </div> 
 </template>
 
